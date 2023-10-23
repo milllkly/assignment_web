@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Gulder</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <div class="container mt-4">
+    <h1 class="text-center">About Gulder</h1>
+
+    <!-- Tabs -->
+    <div class="tabs mt-4">
+        <button class="btn btn-custom active" onclick="changeTab('story')">Our Story</button>
+        <button class="btn btn-custom" onclick="changeTab('message')">Send a Message</button>
+    </div>
+
+    <!-- Tab Contents -->
+    <div id="story" class="tab-content active">
+        <p class="mt-4">
+          Gulder is a prestigious flower brand established in the vibrant city of Astana in 2022. With a passionate commitment to bringing unrivaled freshness and aesthetic to every bouquet, we source our distinguished flowers from the finest farms across Europe. Every flower that arrives at Gulder is a testament to quality, elegance, and the captivating allure of nature's beauty.
+        </p>
+    </div>
+
+    <div id="message" class="tab-content">
+        <h2 class="mt-4">Share your opinion about our products</h2>
+        <form class="mt-2">
+            <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Enter your message to Gulder"></textarea>
+            </div>
+            <button type="submit" class="btn btn-custom">Send</button>
+        </form>
+    </div>
+
+    <!-- Accordion for Social Media -->
+    <h2 class="mt-4">Follow Us on Social Media</h2>
+    <div class="accordion" id="socialMediaAccordion">
+      
+        <div class="card">
+            <div class="card-header" id="headingInstagram">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseInstagram" aria-expanded="true" aria-controls="collapseInstagram">
+                    Instagram
+                </button>
+            </div>
+            <div id="collapseInstagram" class="collapse" aria-labelledby="headingInstagram" data-parent="#socialMediaAccordion">
+                <div class="card-body">
+                    <a href="https://www.instagram.com/milllkly" target="_blank">Visit our Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingInstagram">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseInstagram" aria-expanded="true" aria-controls="collapseInstagram">
+                TikTok
+              </button>
+          </div>
+          <div id="collapseTiktok" class="collapse" aria-labelledby="headingTikTok" data-parent="#socialMediaAccordion">
+              <div class="card-body">
+                  <a href="https://www.instagram.com/milllkly" target="_blank">Visit our TikTok</a>
+              </div>
+          </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingPinterest">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseInstagram" aria-expanded="true" aria-controls="collapseInstagram">
+              Pinterest
+            </button>
+        </div>
+        <div id="collapsePinterest" class="collapse" aria-labelledby="headingPinterest" data-parent="#socialMediaAccordion">
+            <div class="card-body">
+                <a href="https://www.instagram.com/milllkly" target="_blank">Visit our Pinterest</a>
+            </div>
+        </div>
+    </div>
+       
+    </div>
+
+    <div class="navigation-buttons mt-4">
+        <a href="index.html" class="btn btn-custom">Go back</a>
+        <a href="cooperation.html" class="btn btn-custom">Go further</a>
+    </div>
+
+  </div>
+
+  <div id="notification-banner" class="hidden">
+      <p id="notification-message"></p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>

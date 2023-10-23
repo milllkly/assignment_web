@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cooperation - Gulder</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    h2 {
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+    </style>
+</head>
+
+<body>
+
+  <div class="container mt-4">
+    <h1 class="text-center">Cooperation</h1>
+
+    <p class="mt-4">
+      At Gulder, we believe in the power of collaboration and are always open to working with talented individuals and entities from various fields. Whether you are an artist, blogger, or business person, there are ample opportunities to create and celebrate beauty together.
+    </p>
+
+    <h2 class="mt-4">Let's Collaborate</h2>
+    <p>If you’re interested in collaborating with us, kindly fill out the form below:</p>
+    <form class="mt-2">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="link">Link to Your Work:</label>
+        <input type="url" class="form-control" id="link" placeholder="Enter the link to your portfolio or work" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea class="form-control" id="message" rows="3" placeholder="Tell us more about yourself and your work" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-custom">Send</button>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <div class="container mt-4">
+
+    <div class="navigation-buttons">
+        <a href="index.html" class="btn btn-custom">Go to back</a>
+       
+    </div>
+</div>
+
+<h2 class="mt-4">Countdown Timer</h2>
+<p>Set the timer duration:</p>
+<div class="input-group mb-3">
+  <input type="number" id="timerInput" class="form-control" placeholder="Duration in seconds" aria-label="Duration in seconds" aria-describedby="button-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Set Timer</button>
+  </div>
+</div>
+<div class="progress mt-4">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+</div>
+<p class="mt-2" id="timeRemaining"></p>
+
+
+<script src="script.js"></script>
+</body>
+
+</html>
